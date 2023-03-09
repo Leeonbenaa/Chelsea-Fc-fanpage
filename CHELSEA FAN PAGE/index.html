@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea FC</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body>
+
+    <header class="bgimg">
+
+        <div class="bg-text">
+            <h1 id="naslov-text">CHELSEA FC</h1>
+        </div>
+    </header>
+
+    <nav>
+
+        <div class="navbar">
+
+            <a href="index.html">POČETNA</a>
+            <a href="pages/igraci.html">IGRAČI</a>
+            <a href="pages/trofeji.html">TROFEJI</a>
+            <div class="nav-text">
+                <h1 id="naslov-text">CHELSEA FC</h1>
+            </div>
+            <img id="logo" src="images/logo.png" alt="logo">
+        </div>
+    </nav>
+
+    <main>
+       
+       
+                <div class="row-pocetna">
+                    <div class="column-pocetna"><h2>POVIJEST</h2> <p>Chelsea je osnovan 10. ožujka 1905. godine u pubu po imenu The Rising Sun. U svojim počecima klub nije doživljavao veliki uspjeh, najbliže tome su bili 1915. godine kada su došli do finala FA kupa i izgubili od Sheffield Uniteda. Bivši
+                        napadač engleske reprezentacije Ted Drake postaje trener 1952. godine te započinje modernizaciju kluba. Mijenja se grb Pensionersa, poboljšava se omladinski pogon i režim treninga te se nadograđuje stadion. Sve to je dovelo do prvog
+                        velikog uspjeha, kada je klub iz zapadnog Londona postao po prvi put prvakom Engleske lige u sezoni 1954./55.</p>  </div>
+                    <div class="column-pocetna"> <img id="slika" src="images/pov.jpg" alt="Chelsea 1905.">
+   
+  
+                       </div>
+                    </div>
+              
+               
+                <div class="row-pocetna">
+                   
+                    <div class="column-pocetna"><h2> <span>STADION</span> </h2> 
+                        <p>Nogometni klub Chelsea igra na stadionu Stamford Bridge. Stadion se nalazi u zapadnom Londonu i ima kapacitet od 40,341 gledatelja. Napravljen je 1877.Na njemu je do 1905. godine igrao London Athletic club. </p> </div>
+                    <div class="column-pocetna"> <a target="_blank" href="images/stamford bridge.JPG"><img id="slika" src="images/bridge.png" alt="Stamford Bridge"></a>
+   
+    
+                       
+                    </div>
+                </div>
+            </main>
+            <h2 id="legende-naslov">LEGENDE KLUBA</h2>
+          
+            <div class="slideshow">
+                
+                <div class="slide">
+                  
+                  <img id="legende-slika" src="images/lampard.png">
+                 <br>
+                 <br>
+                 <br><br>
+                  <div class="text"><strong>FRANK LAMPARD</strong></div>
+                </div>
+                
+                <div class="slide">
+                  
+                  <img id="legende-slika" src="images/hazard.png">
+                  <br>
+                  <br>
+                  <br><br>
+                  <div class="text"><strong>EDEN HAZARD</strong></div>
+                </div>
+                
+                <div class="slide">
+                 
+                  <img id="legende-slika"src="images/drogba.png">
+                  <br>
+                 <br>
+                 <br><br>
+                  <div class="text"><strong>DIDIER DROGBA</strong></div>
+                </div>
+                 
+                <div class="slide">
+                 
+                    <img id="legende-slika"src="images/terry.png">
+                    <br>
+                    <br>
+                    <br><br>
+                    <div class="text"><strong> JOHN TERRY</strong></div>
+                  </div>
+                  
+                 
+                  
+                </div>
+                
+                
+               
+                  
+                 
+                
+                <div class="text"><strong> OSTALE LEGENDE</strong>: <a href="images/zola.jpg" target="_blank">Gianfranco Zola</a>, <a href="images/osgood.jpg"target="_blank">Peter Osgood</a>, <a href="images/tambling.jpg"target="_blank">Bobby Tambling</a>, <a href="images/bonetti.jpg"target="_blank">Peter Bonetti</a>, <a href="images/dixon.jpg"target="_blank">Kerry Dixon</a>, <a href="images/harris.jpg"target="_blank">Ron Harris</a>, <a href="images/wise.jpg"target="_blank">Dennis Wise</a></div>
+                
+                <footer>
+                  
+                  <div class=”footer-content”>
+                    <h3>Korišteni resursi</h3>
+                    <ul>
+                      <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">W3SCHOOLS</a></li>
+                      <li><a href="https://www.freecodecamp.org/news/tag/html/" target="_blank">FREECODECAMP</a></li>
+                      <li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-float-and-columns-to-lay-out-content-with-css" target="_blank">FLOAT/COLUMNS</a></li>
+                     
+                      
+                   </ul>
+                    <div class=”footer-bottom”>
+                     
+                   
+                    <p> &copy;Leon Benić,3. godina </p>
+                    
+                    
+                    
+                     </div>
+                </div>
+               
+                </footer>
+            
+                
+          
+      
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); 
+}
+</script>
+</html>
